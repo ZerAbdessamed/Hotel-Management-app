@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_fx.LoginController">
+   <children>
+      <AnchorPane prefHeight="118.0" prefWidth="608.0" styleClass="log_head">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="73.0" layoutX="168.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icone/hotel-logo-design_423075-16-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="247.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HotelSphére">
+               <font>
+                  <Font name="Zilla Slab Bold Italic" size="31.0" />
+               </font>
+            </Text>
+         </children>
+         <stylesheets>
+            <URL value="@../../../Style/Style_fx.css" />
+            <URL value="@../../../Style/Style_fx.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane prefHeight="401.0" prefWidth="577.0">
+         <children>
+            <TextField id="user" fx:id="usern" layoutX="259.0" layoutY="105.0" prefHeight="37.0" prefWidth="202.0" />
+            <PasswordField fx:id="password" layoutX="259.0" layoutY="187.0" prefHeight="37.0" prefWidth="202.0" />
+            <Button layoutX="242.0" layoutY="316.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="98.0" styleClass="btn_log" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Zilla Slab Bold Italic" size="13.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../../../Style/Style_fx.css" />
+                  <URL value="@../../../Style/Style_fx.css" />
+               </stylesheets>
+            </Button>
+            <Label layoutX="109.0" layoutY="113.0" text="Enter Username:">
+               <font>
+                  <Font name="Zilla Slab Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="195.0" text="Enter Password:">
+               <font>
+                  <Font name="Zilla Slab Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label id="lb" layoutX="251.0" layoutY="270.0" prefHeight="17.0" prefWidth="223.0" />
+            <Label fx:id="lb" layoutX="145.0" layoutY="257.0" prefHeight="27.0" prefWidth="337.0" textFill="#f50606">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Text layoutX="210.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel: +213698389914" wrappingWidth="186.50299072265625">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
